@@ -71,7 +71,7 @@ function launchEditor(editor) {
 /////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 function handleConfig(parsed) {
-  var config = parsed.npmInitConfig;
+  var config = parsed.npmPowerInitConfig;
 
   if ('debug' in confg && config.debug) {
     Debug = require('debug');    
@@ -90,8 +90,8 @@ function handleConfig(parsed) {
     ex(config.exec);
   }
 
-  // remove the npmDefaultsConfig
-  delete parsed.npmInitConfig;
+  // remove the npmPowerInitConfig
+  delete parsed.npmPowerInitConfig;
 
   // finally, attach to the editor if specified
   // until we can count on node 11+, we can only do an async editor
