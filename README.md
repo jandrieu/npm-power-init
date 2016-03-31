@@ -2,7 +2,7 @@
 A flexible alternative to .npm-init.js for customizing npm init
 
 # Download
-Download anywhere using either npm or git. You won't need to keep it around after you set it up. CD to the source files once you have it fully installed. However, you will need .
+Download anywhere using either npm or git. You won't need to keep it around after you set it up. "cd"to the source files once you have it fully installed. There are no dependencies other than node and npm.
 
 Using npm:
 ```bash
