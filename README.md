@@ -32,7 +32,7 @@ Unzip and cd into the directory.
 
 Here are two ways to do this.
 
-A. Rename npm-power-init.js to npm-init.js and place in your home directory. **This is the recommended approach**
+A. Rename npm-power-init.js to npm-init.js and place in your home directory. **This is the recommended approach**.
 
 ```bash
 mv npm-power-init.js ~/.npm-init.js
@@ -48,7 +48,7 @@ npm config set init-module ~/npm-power-init.js
 ## Step 2 -- Configure npm-init.json
 **npm-power-init.js** looks in your home directory for a **.npm-init.json** file for configuration data.
 
-The config file is a template package.json with an options special property **npmPowerInitConfig** which contains the configuration settings specific to npm power init.
+The config file is a template package.json with an optional special property **npmPowerInitConfig** which contains the configuration settings specific to npm power init. Look in the examples directory to see how it works.
 
 ### Available settings
   **exec** -- An array of templated commands to run with **process.exec**
@@ -68,9 +68,10 @@ The config file is a template package.json with an options special property **np
 Before parsing the .npm-power-init.json, we replace two special tags, ${dir} and ${path}, with their respective values.
 
   **${dir}** -- The name of the current working directory
+  
   **${path}** -- The full path to the current working directory
   
-${dir} is great for naming files or your package based on the directory in which you run npm init. ${path} is useful if you want to make sure you have the full absolute path for any file manipulation.      
+**${dir}** is great for naming files or your package based on the directory in which you run npm init. **${path}** is useful if you want to make sure you have the full absolute path for any file manipulation.      
 
 ## Step 3 -- Use **npm init** as usual
 
