@@ -1,0 +1,21 @@
+{
+  "name": "${dir}",
+  "version": "1.0.0",
+  "main": "${dir}.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Joe Andrieu",
+  "license": "UNLICENSED",
+  "private": true,
+  "npmPowerInitConfig" : {
+    "exec" : [
+      "echo \"test:\n\tnode_modules/.bin/mocha --reporter spec\n\n.PHONY: test\" > Makefile",
+      "mkdir test && touch test/${dir}Test.js",
+      "[ -f ${dir}.js ] || echo '#!/usr/bin/env node' > ${dir}.js && chmod +x ${dir}.js"
+    ],
+    "editor" : "/usr/bin/emacs",
+    "bypass" : true,
+    "debug" : true
+  }
+}

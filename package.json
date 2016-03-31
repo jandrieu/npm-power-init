@@ -1,0 +1,25 @@
+{
+  "name": "npm-power-init",
+  "version": "1.0.0",
+  "description": "A flexible, alternative .npm-init.js for customizing npm init",
+  "main": "npm-power-init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jandrieu/npm-power-init.git"
+  },
+  "keywords": [
+    "npm",
+    "npm init",
+    ".npm-init-js",
+    ".npmrc"
+  ],
+  "author": "Joe Andrieu <joe@andrieu.net> (http://joeandrieu.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jandrieu/npm-power-init/issues"
+  },
+  "homepage": "https://github.com/jandrieu/npm-power-init#readme"
+}
