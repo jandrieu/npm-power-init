@@ -73,7 +73,7 @@ function launchEditor(editor) {
 function handleConfig(parsed) {
   var config = parsed.npmPowerInitConfig;
 
-  if ('debug' in confg && config.debug) {
+  if ('debug' in config && config.debug) {
     Debug = require('debug');    
     Debug.enable('npm-power-init');
     debug = new Debug('npm-power-init');
